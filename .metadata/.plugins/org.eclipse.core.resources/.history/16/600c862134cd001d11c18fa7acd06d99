@@ -1,0 +1,30 @@
+package com.pdf;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.pdf.entity.Student;
+import com.pdf.service.StudentService;
+
+@SpringBootApplication
+public class DemoApplication {//implements CommandLineRunner{
+//@Autowired
+//	private StudentService studentService;
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//		for(int i=0;i<=10;i++) {
+//			Student student=new Student();
+//			student.setStudentName("Sampurna");
+//			student.setStudentEmail("vcv4521@gmail.com");
+//			student.setMobileNumber("10000233");
+//			studentService.createStudent(student);
+//		}
+		
+	}
+	
+

@@ -1,0 +1,32 @@
+package com.pdf.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pdf.entity.Student;
+import com.pdf.repository.StudentPdfRepository;
+@Service
+public class StudentServiceImpl implements StudentService{
+
+	@Autowired
+	private StudentPdfRepository studentPdfRepository;
+	
+	@Override
+	public Student createStudent(Student student) {
+		
+		return studentPdfRepository.save(student);
+	}
+
+	@Override
+	public List<Student> getAllStudent() {
+		List<Student> findAll = studentPdfRepository.findAll();
+		return findAll;
+	}
+
+	
+
+	
+
+}

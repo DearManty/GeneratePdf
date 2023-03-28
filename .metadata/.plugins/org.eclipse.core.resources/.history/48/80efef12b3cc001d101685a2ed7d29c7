@@ -1,0 +1,5 @@
+package com.pdf.repository;
+
+public interface StudentPdfRepository {
+
+}
